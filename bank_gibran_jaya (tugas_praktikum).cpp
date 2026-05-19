@@ -61,3 +61,8 @@ int main() {
     nasabah2->potongAdmin();
     nasabah3->potongAdmin();
     nasabah4->potongAdmin();
+
+    cout << "=== PROSES ADMIN BULANAN ===" << endl;
+
+    return 0;
+}
