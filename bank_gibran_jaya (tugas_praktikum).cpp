@@ -12,3 +12,13 @@ public:
 
     virtual void potongAdmin() = 0; // pure virtual function
 };
+
+// Rekening Syariah
+class RekeningSyariah : public RekeningBank {
+public:
+    RekeningSyariah(double s) : RekeningBank(s) {}
+
+    void potongAdmin() override {
+        cout << "[Syariah] Tidak ada biaya admin. Saldo: " << saldo << endl;
+    }
+};
