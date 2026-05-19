@@ -7,7 +7,7 @@ private:
     string saklarNO[10];
 
  public:
-    void setSaklarNO(int i, string value)
+    void setSaklarNo(int i, string value)
     {
         saklarNO[i] = value;
     }
@@ -21,5 +21,6 @@ int main()
 {
     remoteLampu lampuRumah;
 
-    
+    lampuRumah.setSaklarNo(0, "Lampu Teras Rumah");
+    lampuRumah.setSaklarNo(1, "Lampu Ruang Tamu");
 }
