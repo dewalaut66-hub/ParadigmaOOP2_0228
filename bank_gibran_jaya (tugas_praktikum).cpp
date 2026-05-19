@@ -33,3 +33,18 @@ public:
         cout << "[Konvensional] Admin 15000 dipotong. Saldo: " << saldo << endl;
     }
 };
+
+// Rekening Premium
+class RekeningPremium : public RekeningBank {
+public:
+    RekeningPremium(double s) : RekeningBank(s) {}
+
+    void potongAdmin() override {
+        if (saldo > 10000000) {
+            cout << "[Premium] Bebas admin. Saldo: " << saldo << endl;
+        } else {
+            saldo -= 50000;
+            cout << "[Premium] Admin 50000 dipotong. Saldo: " << saldo << endl;
+        }
+    }
+};
