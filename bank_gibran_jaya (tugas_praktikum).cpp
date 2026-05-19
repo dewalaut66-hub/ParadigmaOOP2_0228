@@ -48,3 +48,16 @@ public:
         }
     }
 };
+
+// Main function
+int main() {
+
+    RekeningBank* nasabah1 = new RekeningSyariah(5000000);
+    RekeningBank* nasabah2 = new RekeningKonvensional(5000000);
+    RekeningBank* nasabah3 = new RekeningPremium(8000000);
+    RekeningBank* nasabah4 = new RekeningPremium(15000000);
+
+    nasabah1->potongAdmin();
+    nasabah2->potongAdmin();
+    nasabah3->potongAdmin();
+    nasabah4->potongAdmin();
