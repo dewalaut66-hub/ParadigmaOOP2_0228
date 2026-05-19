@@ -3,8 +3,17 @@ using namespace std;
 
 class baseClass final{
 public:
-    virtual void perkenalan()
-    {
+    virtual void perkenalan(){
         cout << "Hallo saya Function dari baseClass";
     }
 };
+class baseClass1{
+public:
+    virtual void perkenalan(){
+        cout << "Hallo saya Function dari baseClass1";
+    }    
+};
+class derivedClass : public baseClass1 {
+    public:
+    void perkenalan() {}
+}
