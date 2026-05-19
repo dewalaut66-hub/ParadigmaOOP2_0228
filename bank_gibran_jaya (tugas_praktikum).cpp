@@ -22,3 +22,14 @@ public:
         cout << "[Syariah] Tidak ada biaya admin. Saldo: " << saldo << endl;
     }
 };
+
+//Rekening Konvensional
+class RekeningKonvensional : public RekeningBank {
+public:
+    RekeningKonvensional(double s) : RekeningBank(s) {}
+
+    void potongAdmin() override {
+        saldo -= 15000;
+        cout << "[Konvensional] Admin 15000 dipotong. Saldo: " << saldo << endl;
+    }
+};
